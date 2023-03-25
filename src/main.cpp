@@ -6,7 +6,7 @@
 #include "RenderWindow.h"
 #include "Sprite.h"
 
-int main() {
+int main(int argv, char** args) {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) LOG("SDL Init failed: " << SDL_GetError());
     if (!IMG_Init(IMG_INIT_PNG)) LOG("SDL_IMAGE Init failed: " << SDL_GetError());
 
